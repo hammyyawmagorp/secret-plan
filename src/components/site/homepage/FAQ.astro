@@ -1,0 +1,41 @@
+---
+
+const questions = [
+{
+    title: 'Is the personal account really free?',
+    answer:
+      'Yes! We don’t require a credit card to sign up, it is completely free.'
+  },
+{
+    title: 'Can I use SECRETPLAN for my company?',
+    answer:
+      'Absolutely! SECRETPLAN is perfect for companies of all sizes.'
+  },
+{
+    title: 'How is it so cheap?',
+    answer:
+      'It just is! You are welcome!'
+  },
+    {title: 'Do you plan on adding more features in the future?',
+    answer:
+      'Yes we do!'
+  },
+]
+---
+
+
+<div class="max-w-2xl px-6 mx-auto mt-20 text-center lg:max-w-7xl lg:px-8">
+    <h1 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">Frequently Asked Questions</h1>
+    <div class="mt-10 space-y-8">
+   {questions.map(question => (
+
+<h2 class="text-lg font-bold"> {question.title}<h2 />   
+    <p class="mt-1">
+          {question.answer}
+        </p> 
+   ))
+}</div></div>
+   
+    
+  
+   
